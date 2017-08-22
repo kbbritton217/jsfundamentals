@@ -1,0 +1,7 @@
+.box {
+	height: 30em;
+	width: 50%;
+	background-color: coral;
+	padding: 20px;
+	border-radius: 10px;
+}
