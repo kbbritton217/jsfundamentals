@@ -1,20 +1,23 @@
 // Defining variables
 let input = document.getElementById("input");
 let output = document.getElementById("output");
-let listHeading = document.getElementById("listHeading");
+let listHeading = document.getElementById("listHeading"); // --- my solution
+//let ulist = document.get ElementById("friendsList"); --- Instructor solution
+//let newName = ""; --- also Instructor solution
+
 //console.log(input.value);
 function clear(){
 	document.getElementById('input').value="";
-}
+} //my solution
 
 //function to show or hide list header
 function header() {
 	if (output.innerHTML === ""){
 	listHeading.innerHTML ="";
 } else {
-	listHeading.innerHTML ="<h3> Capitalized names: </h3>";
+	listHeading.innerHTML ="<h3> Capitalized name(s): </h3>";
 }
-}
+} // --- my solution
 
 //function to capitalize first letter of input name
 function capitalize() {
@@ -37,7 +40,7 @@ $('input').keyup(function (e) {
 	if (e.keyCode === 13) {
 		capitalize();
 	}
-})
+}) // --- my solution
 
 
 
@@ -49,4 +52,10 @@ $('input').keyup(function (e) {
 }*/
 
 
-
+/*
+function addItem() {
+	let li = document.createElement('li');
+	let text = li.innerHTML = newName;
+	ulist.appendChild(li);
+}
+*/
