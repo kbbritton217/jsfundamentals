@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AJAX Fundamentals</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- BS JS can be in head because it doesn't reference any html elements -->
+	</head>
+	<body>
+	<div class="container">
+		<div class="col-sm-8">
+			<div class="input-group"> 
+			<input type="text" class="form-control" id="input">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" onclick="personFilm()">
+					Submit
+				</button>
+			</span>
+			</div>
+			<hr>
+			<div class="well" id="output">
+				
+			</div>
+		</div>
+	</div>
+		
+		<div class="container">
+			<div class="col-sm-6">
+				<table  class="table table-striped">
+					<thead>
+						<tr>
+							<th>Planet Name</th>
+						</tr>
+					</thead>
+					<tbody id="planetTable">
+					</tbody>
+				</table>
+			</div>
+			<div class="col-sm-6">
+				<table  class="table table-striped">
+					<thead>
+						<tr>
+							<th>Starship Name</th>
+						</tr>
+					</thead>
+					<tbody id="shipTable">
+					</tbody>
+				</table>
+			</div>
+			</div>
+
+		<script type="text/javascript" src="/new.js"></script>
+	<!-- custom JS should go here -->
+	</body>
+</html>
