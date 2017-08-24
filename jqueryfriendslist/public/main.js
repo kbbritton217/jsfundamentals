@@ -45,4 +45,18 @@ $(document).ready(function(){
 		});
 	});
 
+	$friends.delegate('.remove', 'click', function(){
+		var $li = $(this).closest('li');
+
+		$.ajax({
+			type: 'DELETE',
+			url: 'http://rest.learncode.academy/api/learncode/javascriptfall/' + $(this).attr('id'),
+			success: function(){
+				$li.fadeOut(300, function(){
+					$(this).remove();
+				});
+			}
+		});
+	});
+
 });
